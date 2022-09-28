@@ -1,14 +1,14 @@
-export const MenuItems = [
+export const NavBarLinkItems = [
     {
         title: 'Обо мне',
-        url: '/web-portfolio/',
+        url: '/about',
     },
     {
         title: 'Проекты',
-        url: '/web-portfolio/projects',
+        url: '/projects',
     },
     {
         title: 'Контакты',
-        url: '/web-portfolio/contact',
+        url: '/contacts',
     },
 ]
