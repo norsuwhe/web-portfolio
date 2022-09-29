@@ -1,14 +1,14 @@
 export const NavBarLinkItems = [
     {
-        title: 'Обо мне',
+        name: 'Обо мне',
         url: '/about',
     },
     {
-        title: 'Проекты',
+        name: 'Проекты',
         url: '/projects',
     },
     {
-        title: 'Контакты',
+        name: 'Контакты',
         url: '/contacts',
     },
 ]
