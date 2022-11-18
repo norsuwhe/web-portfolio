@@ -1,7 +1,8 @@
-@import "../../utils/scss/variables.scss";
+@import "../../utils/scss/variables&mixins.scss";
 
 .navigation {
-    position: relative;
+    position: absolute;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +10,7 @@
 
     &__links {
         display: flex;
-        gap: 20px;
+        gap: 40px;
         list-style-type: none;
     }
 
@@ -49,7 +50,7 @@
             position: fixed;
             top: -100vh;
             border-radius: 0px 0px 10px 10px;
-            transition: all 1s ease-in-out;
+            transition: all 0.8s ease;
             z-index: 2;
 
             &_active {

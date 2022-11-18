@@ -1,0 +1,91 @@
+@import '../../utils/scss/variables&mixins.scss';
+
+.about {
+    display: flex;
+    margin: 0 auto;
+    height: 100vh;
+    align-items: center;
+    max-width: 1060px;
+    gap: 5%;
+
+    &__header {
+        font-family: $font-main;
+        color: $color-green;
+        font-weight: 700;
+        font-size: $h1-desktop;
+        line-height: 90.52%;
+    }
+
+    &__spec {
+        font-weight: 400;
+        font-size: $h2-desktop;
+        line-height: 58px;
+        color: $color-white;
+    }
+
+    &__tech-stack {
+        font-weight: 400;
+        font-size: $h3-desktop;
+        line-height: 32px;
+        color: $color-white-grey
+    }
+
+    &__paragraph {
+        color: $color-grey-darker;
+    }
+
+    &__image-group {
+        position: relative;
+        margin-top: 96px;
+    }
+
+    &__rectangle {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: -50px;
+        z-index: -1;
+        border: 5px $color-green solid;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about {
+        max-width: 90%;
+
+        &__header {
+            font-size: $h1-mobile;
+        }
+
+        &__paragraph {
+            color: $color-grey-darker;
+        }
+
+        &__rectangle {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .about {
+        &__image {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .about {
+        &__header {
+            font-size: $h1-fold;
+        }
+
+        &__spec {
+            font-size: $h2-fold;
+            line-height: 32px;
+        }
+    }
+}
