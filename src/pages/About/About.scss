@@ -1,19 +1,11 @@
 @import '../../utils/scss/variables&mixins.scss';
 
 .about {
-    display: flex;
-    margin: 0 auto;
-    height: 100vh;
-    align-items: center;
-    max-width: 1060px;
+    @include section-position;
     gap: 5%;
 
     &__header {
-        font-family: $font-main;
-        color: $color-green;
-        font-weight: 700;
-        font-size: $h1-desktop;
-        line-height: 90.52%;
+        @include header-main;
     }
 
     &__spec {

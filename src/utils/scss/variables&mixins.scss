@@ -10,10 +10,28 @@ $color-grey-darker: #C7C7C7;
 $font-main: 'Noto Looped Thai', sans-serif;
 
 // FONT SIZE
-$h1-desktop: 96px;
-$h2-desktop: 36px;
-$h3-desktop: 20px;
-$h1-mobile: 64px;
-$h1-fold: 44px;
-$h2-fold: 32px;
-$h3-fold: 20px;
+$h1-desktop: 6rem;
+$h2-desktop: 2.25rem;
+$h3-desktop: 1.25rem;
+$h1-mobile: 4rem;
+$h1-fold: 2.75rem;
+$h2-fold: 2rem;
+$h3-fold: 1.25rem;
+
+// MIXINS
+@mixin section-position {
+    display: flex;
+    margin: 0 auto;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    max-width: 1060px;
+}
+
+@mixin header-main {
+    font-family: $font-main;
+    color: $color-green;
+    font-weight: 700;
+    font-size: $h1-desktop;
+    line-height: 90.52%;
+}
