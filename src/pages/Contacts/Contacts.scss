@@ -1,0 +1,41 @@
+@import '../../utils/scss/variables&mixins.scss';
+
+.contacts {
+    @include section-position;
+    gap: 5%;
+
+    &__links {
+        text-align: right;
+        list-style-type: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    &__info {
+        max-width: 326px;
+        color: $color-green;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .contacts {
+        flex-direction: column-reverse;
+        width: 90%;
+
+        &__links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5%;
+        }
+
+        &__info {
+            max-width: 100%;
+        }
+    }
+}

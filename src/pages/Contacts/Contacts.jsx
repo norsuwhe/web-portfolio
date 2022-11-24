@@ -2,22 +2,30 @@ import "./Contacts.scss";
 
 const Contacts = () => {
   return (
-    <section>
-      <ul>
+    <section className="contacts">
+      <ul className="contacts__links">
         <li>
-          <a href="">Email</a>
+          <a className="contacts__link" href="">
+            Email
+          </a>
         </li>
         <li>
-          <a href="">Telegram</a>
+          <a className="contacts__link" href="">
+            Telegram
+          </a>
         </li>
         <li>
-          <a href="">HH</a>
+          <a className="contacts__link" href="">
+            HH
+          </a>
         </li>
         <li>
-          <a href="">GitHub</a>
+          <a className="contacts__link" href="">
+            GitHub
+          </a>
         </li>
       </ul>
-      <p>
+      <p className="contacts__info">
         Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
         Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
         mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis
