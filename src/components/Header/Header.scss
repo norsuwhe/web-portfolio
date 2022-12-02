@@ -1,0 +1,21 @@
+@import '../../utils/scss/variables.scss';
+
+.header {
+    font-family: $font-main;
+    color: $color-green;
+    font-weight: 700;
+    font-size: $h1-desktop;
+    line-height: 90.52%;
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header {
+        font-size: 2.75rem;
+    }
+}

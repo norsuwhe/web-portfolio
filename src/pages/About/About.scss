@@ -1,26 +1,9 @@
-@import '../../utils/scss/variables&mixins.scss';
+@import '../../utils/scss/variables.scss';
 
 .about {
-    @include section-position;
+    display: flex;
+    justify-content: center;
     gap: 5%;
-
-    &__header {
-        @include header-main;
-    }
-
-    &__spec {
-        font-weight: 400;
-        font-size: $h2-desktop;
-        line-height: 58px;
-        color: $color-white;
-    }
-
-    &__tech-stack {
-        font-weight: 400;
-        font-size: $h3-desktop;
-        line-height: 32px;
-        color: $color-white-grey
-    }
 
     &__paragraph {
         color: $color-grey-darker;
@@ -46,14 +29,6 @@
 @media screen and (max-width: 1200px) {
     .about {
         max-width: 90%;
-
-        &__header {
-            font-size: $h1-mobile;
-        }
-
-        &__paragraph {
-            color: $color-grey-darker;
-        }
 
         &__rectangle {
             display: none;

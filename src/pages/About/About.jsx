@@ -1,13 +1,15 @@
 import MyImage from "../../assets/img/photo.png";
+import Header from "../../components/Header/Header";
+import SubHeader from "../../components/SubHeader/SubHeader";
 import "./About.scss";
 
 const About = () => {
   return (
     <section className="about">
       <div className="about__description">
-        <h1 className="about__header">Привет, меня зовут Владимир</h1>
-        <h2 className="about__spec">И я Front-end разработчик</h2>
-        <h3 className="about__tech-stack">TypeScript / React / Redux / Sass</h3>
+        <Header>Привет, меня зовут Владимир</Header>
+        <SubHeader>И я Front-end разработчик</SubHeader>
+        <SubHeader size="small">TypeScript / React / Redux / Sass</SubHeader>
         <p className="about__paragraph">
           Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
           Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
@@ -16,7 +18,7 @@ const About = () => {
         </p>
       </div>
       <div className="about__image-group">
-        <img className="about__image" src={MyImage} alt="" />
+        <img className="about__image" src={MyImage} alt="photo of me" />
         <div className="about__rectangle"></div>
       </div>
     </section>

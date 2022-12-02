@@ -1,0 +1,26 @@
+@import '../../utils/scss/variables.scss';
+
+.sub-header {
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 58px;
+    color: $color-white;
+
+    &_small {
+        font-size: 1.25rem;
+        line-height: 32px;
+        color: $color-white-grey;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .sub-header {
+        font-size: 2rem;
+        line-height: 32px;
+
+        &_small {
+            font-size: 2rem;
+            line-height: 32px;
+        }
+    }
+}

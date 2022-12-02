@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import MainContainer from "../MainContainer/MainContainer";
 import NavBar from "../NavBar/NavBar";
 
 const Layout = () => {
@@ -7,9 +8,9 @@ const Layout = () => {
       <header>
         <NavBar />
       </header>
-      <main>
+      <MainContainer>
         <Outlet />
-      </main>
+      </MainContainer>
     </>
   );
 };

@@ -1,7 +1,7 @@
-@import '../../utils/scss/variables&mixins.scss';
+@import '../../utils/scss/variables.scss';
 
 .contacts {
-    @include section-position;
+    display: flex;
     gap: 5%;
 
     &__links {
