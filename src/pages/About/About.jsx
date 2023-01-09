@@ -7,14 +7,16 @@ const About = () => {
   return (
     <section className="about">
       <div className="about__description">
-        <Header>Привет, меня зовут Владимир</Header>
+        <Header>
+          Привет,
+          <br /> меня зовут Владимир
+        </Header>
         <SubHeader>И я Front-end разработчик</SubHeader>
         <SubHeader size="small">TypeScript / React / Redux / Sass</SubHeader>
         <p className="about__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
-          Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-          mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis
-          tellus..
+          Люблю разработку, самостоятельно изучать новые технологии и решать с
+          их помощью задачи. Не люблю самостоятельно дизайнить, поэтому этот
+          сайт такой скучный. А ещё я немного фотограф, музыкант и кофеман.
         </p>
       </div>
       <div className="about__image-group">

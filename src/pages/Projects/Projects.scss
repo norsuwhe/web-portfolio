@@ -1,0 +1,28 @@
+@import '../../utils/scss/variables.scss';
+
+.swiper__button_next,
+.swiper__button_prev {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    background: none;
+    border: none;
+}
+
+.swiper__button_next {
+    right: -5%;
+}
+
+.swiper__button_prev {
+    left: -5%;
+}
+
+@media screen and (max-width: 1350px) {
+    .swiper__button_next {
+        right: 0%;
+    }
+
+    .swiper__button_prev {
+        left: 0%;
+    }
+}

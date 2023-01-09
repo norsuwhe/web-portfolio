@@ -7,6 +7,9 @@
     &__links {
         text-align: right;
         list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__link {

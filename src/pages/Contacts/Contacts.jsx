@@ -1,35 +1,24 @@
 import "./Contacts.scss";
+import { ContactsList } from "./ContactsList";
 
 const Contacts = () => {
   return (
     <section className="contacts">
       <ul className="contacts__links">
-        <li>
-          <a className="contacts__link" href="">
-            Email
-          </a>
-        </li>
-        <li>
-          <a className="contacts__link" href="">
-            Telegram
-          </a>
-        </li>
-        <li>
-          <a className="contacts__link" href="">
-            HH
-          </a>
-        </li>
-        <li>
-          <a className="contacts__link" href="">
-            GitHub
-          </a>
-        </li>
+        {ContactsList.map(({ name, link }) => {
+          return (
+            <li>
+              <a className="contacts__link" href={link}>
+                {name}
+              </a>
+            </li>
+          );
+        })}
       </ul>
       <p className="contacts__info">
-        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
-        Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-        mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis
-        tellus..
+        В данный момент я ищу работу. Интересно было бы поработать в разработке
+        реально крутых и технологичных проектов. Буду рад выслушать ваши
+        предложения!
       </p>
     </section>
   );
