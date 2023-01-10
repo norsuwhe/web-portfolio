@@ -17,12 +17,17 @@
     left: -5%;
 }
 
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (max-width: 1350px) {
     .swiper__button_next {
-        right: 0%;
+        right: 1%;
     }
 
     .swiper__button_prev {
-        left: 0%;
+        left: 1%;
     }
 }

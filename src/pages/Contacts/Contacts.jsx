@@ -1,13 +1,17 @@
+import { useEffect } from "react";
 import "./Contacts.scss";
 import { ContactsList } from "./ContactsList";
 
 const Contacts = () => {
+  useEffect(() => {
+    document.title = "Контакты";
+  }, []);
   return (
     <section className="contacts">
       <ul className="contacts__links">
         {ContactsList.map(({ name, link }) => {
           return (
-            <li>
+            <li key={name}>
               <a className="contacts__link" href={link}>
                 {name}
               </a>

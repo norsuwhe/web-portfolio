@@ -1,11 +1,11 @@
 @import '../../utils/scss/variables.scss';
 
 .header {
-    font-family: $font-main;
     color: $color-green;
     font-weight: 700;
-    font-size: $h1-desktop;
+    font-size: 6rem;
     line-height: 90.52%;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1200px) {

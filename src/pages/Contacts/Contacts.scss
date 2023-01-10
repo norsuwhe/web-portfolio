@@ -34,11 +34,21 @@
         &__links {
             display: flex;
             flex-wrap: wrap;
+            flex-direction: row;
             gap: 5%;
         }
 
         &__info {
             max-width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .contacts {
+        &__link {
+            font-size: 2rem;
         }
     }
 }

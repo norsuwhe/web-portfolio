@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import MyImage from "../../assets/img/photo.png";
 import Header from "../../components/Header/Header";
 import SubHeader from "../../components/SubHeader/SubHeader";
 import "./About.scss";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "Обо мне";
+  }, []);
+
   return (
     <section className="about">
       <div className="about__description">

@@ -4,11 +4,15 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { useRef, useCallback } from "react";
-import MainContainer from "../../components/MainContainer/MainContainer";
 import ButtonNext from "../../assets/svg/slider-button-next.svg";
 import ButtonPrev from "../../assets/svg/slider-button-prev.svg";
+import { useEffect } from "react";
 
 const Projects = () => {
+  useEffect(() => {
+    document.title = "Проекты";
+  }, []);
+
   const sliderRef = useRef(null);
 
   const handlePrev = useCallback(() => {
@@ -28,7 +32,6 @@ const Projects = () => {
         slidesPerGroup={3}
         roundLengths={true}
         ref={sliderRef}
-        centerInsufficientSlides={true}
         breakpoints={{
           0: {
             slidesPerView: 1,
@@ -37,10 +40,11 @@ const Projects = () => {
           400: {
             slidesPerView: 1,
             slidesPerGroup: 1,
+            spaceBetween: 1,
           },
-          715: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
+          680: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
           },
           820: {
             slidesPerView: 2.5,

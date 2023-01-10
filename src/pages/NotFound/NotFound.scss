@@ -6,13 +6,12 @@
     align-items: flex-start;
 
     &__text {
-        font-family: $font-main;
         font-style: normal;
         font-weight: 400;
         font-size: 2.25rem;
         line-height: 35px;
-        color: $color-white;
-        margin-bottom: 40px;
+        color: $color-white-grey;
+        margin-bottom: 30px;
     }
 
     &__button {
@@ -24,7 +23,7 @@
 
     &__link {
         color: $color-white-grey;
-        font-size: 26px;
+        font-size: 20px;
         text-decoration: none;
     }
 }
@@ -32,17 +31,5 @@
 @media screen and (max-width: 1200px) {
     .not-found {
         width: 90%;
-
-        &__header {
-            font-size: $h1-mobile;
-        }
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .not-found {
-        &__header {
-            font-size: $h1-fold;
-        }
     }
 }
