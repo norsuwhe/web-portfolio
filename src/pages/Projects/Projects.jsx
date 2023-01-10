@@ -7,6 +7,7 @@ import { useRef, useCallback } from "react";
 import ButtonNext from "../../assets/svg/slider-button-next.svg";
 import ButtonPrev from "../../assets/svg/slider-button-prev.svg";
 import { useEffect } from "react";
+import AnimatedMain from "../../components/AnimatedMain/AnimatedMain";
 
 const Projects = () => {
   useEffect(() => {
@@ -26,7 +27,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <>
+    <AnimatedMain>
       <Swiper
         slidesPerView={3}
         slidesPerGroup={3}
@@ -78,7 +79,7 @@ const Projects = () => {
       <button className="swiper__button_next" onClick={handleNext}>
         <img src={ButtonNext} alt="next slide button" />
       </button>
-    </>
+    </AnimatedMain>
   );
 };
 
